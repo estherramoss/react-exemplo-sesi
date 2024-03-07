@@ -5,16 +5,48 @@ import styled, { keyframes } from "styled-components";
 // 🎨
 
 // Componente funcional About
+const About = () => {
+  return (
+    <Container>
+      {/* Wrapperpara o conteúdo da seção "Sobre Mim" */}
+      <ContentWrapper>
+        <Title>Sobre Mim</Title>
 
+        {/* Descrição */}
+        <Description>
+          Sou um desenvolvedor apaixonado por tecnologia e sempre em busca de 
+          novos desafios. Minha jornada começou quando descobri o poder da
+          programação e desde então, não parei mais de aprender e evoluir.
+        </Description>
 
+        {/* Wrapper para a seção de habilidades */}
+        <SkillsWrapper>
+          <SkillTitle>Algumas de minhas habilidades:</SkillTitle>
 
+          {/* Lista de habilidades */ }
+          <SkillList>
+            <Skill>
+              <SkillIcon>💻</SkillIcon>
+              <SkillName>Desenvolvimento Web</SkillName>
+              </Skill>
 
+              <Skill>
+              <SkillIcon>📱</SkillIcon>
+              <SkillName>Desenvolvimento Mobile</SkillName>
+              </Skill>
 
-// 4ª Digitação
+              <Skill>
+              <SkillIcon>🎨</SkillIcon>
+              <SkillName>Design de Interfaces</SkillName>
+              </Skill>
+              </SkillList>
+              </SkillsWrapper>
+              </ContentWrapper>
+              </Container>
+            
 
-
-
-
+  );
+};
 
 
 // Animação de entrada (slide-up)
